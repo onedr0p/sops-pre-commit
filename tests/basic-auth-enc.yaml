@@ -1,0 +1,39 @@
+apiVersion: ENC[AES256_GCM,data:EB4=,iv:OmAbqRBqdMhIyBFpaAvxGmEQYaZjLijMPEo5ZYc0ySU=,tag:vDfHvfO/WIFXM+hxHPVZFA==,type:str]
+data:
+    password: ENC[AES256_GCM,data:mTRYYopHASkVUB2E,iv:JacQOg+UMokmgnf8x7UM7sBT6zfqdVPXNYaBmbel094=,tag:nLDJp9DD8u8KJoP+0eV/Cw==,type:str]
+    user: ENC[AES256_GCM,data:esGa8mFfoso=,iv:AvYQ6esRdHgHoLdFWUWNCjMg29D6BYZnrCRQ8Y5GsjY=,tag:3LUeuLG7pxpgLBZYfn68xg==,type:str]
+kind: ENC[AES256_GCM,data:jSSHvCrN,iv:TugXD0VM+DSuj8T8kI0J4KJC7CDSDoJ7x51ZYBs+pCw=,tag:t0SMsdjbJ2+ITayIdFSuJA==,type:str]
+metadata:
+    creationTimestamp: null
+    name: ENC[AES256_GCM,data:/Axsfljw/5ppcQ==,iv:SSrGABB8b4DP1x+6gNig5epkr5zvFcJbEyMiVDhIPPc=,tag:SZsiRFh73gRo7HoI36DbsA==,type:str]
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age: []
+    lastmodified: "2021-04-13T12:33:20Z"
+    mac: ENC[AES256_GCM,data:AEU+d6nM5PYEu5m+xPrDGWf8JQA47is0o6yAXoL05Hv5FKAhacmuOEvrze+W3yb/v68rj5i4BT3EuLkLm70cWw+WqLsugtjaWcdOvGCTyFEBMyPKfp4cBtGhF/X+iVsB0i9hhfOwZkZ1EtCTwVTjGfGvg+YX1rz+9ZGgg1EGpGA=,iv:T86Jgobt/Ov554hsZQKvGdcEitNUU75oZuzU1ItMWMs=,tag:pA8co3VkKgCGCrKzYRlcyQ==,type:str]
+    pgp:
+        - created_at: "2021-04-13T12:33:19Z"
+          enc: |
+            -----BEGIN PGP MESSAGE-----
+
+            hQIMA//CYHpV/IETAQ/+N1fzCqcfxnChiwfig6gE8bNJZ6RSyYhsl9iDK1ePQIPj
+            93ulRKK2y7741ylPBB4tRXTD8rEYC97VkNSN291CFC818jhFad8L5qiQfcesmUB/
+            tl8HnX8MsRb2rjn2PlEugL5XqmXtDCFCMZ1T2RAX1zpN34BUCDTTdD0kzXgwDHZL
+            KRB6rWwnG3SEmxzMcq5Nev+E3m5Be8BggFOMzy7Mdb/NDyNybV/dyOz8RhgLrfFx
+            qUG7E7tWWVMksLfs4PB3JkysTRhSJpy2VV2FpaxqIFsTHLVFxM587b64b/yqmpGY
+            f8pOw4heItbgtHrFOXjLhMwZYHBnSEdimGq/V13dr7XTmvU8w4pytU8cUSJ/UhVZ
+            IdVUbHQo0Yw+947wjDWVVn2XsixNn5vyn2ffMdvngL5QLrVL5tlqNTKElStDRpWj
+            0/+yt/bXBP7m8OeEicAwaLLMHCix41oWe950/MM/peEB6giS2ONnh28zv12D05ub
+            JNgON00+6AJQE5ztlxNORtND9miXGOGqk1P27BQWy7cOd1cQMHgTCB1RmPkfqApD
+            1lzO2JHfoFDlbRmWJAkoCQnSONut7pwlQMoyh1iEA0LPCkuqaHrNEXkQZh5S3ubT
+            wcgrU2OV+SUpUkTXTFlRNCLucFufnelsAvSAMNVyiJM8fHQ0hTC9ttMqSsWm2n3S
+            XgEXnY4f2yXApFS+LYWmht+ENrl44u8WMFHShc+h+URnqcMX1DaxnEzUW1BC+ykV
+            5Q8jN0acUstjvP4VnGDCihI/+ADQ2f/TKDOcUP80xf3PLTqQiXL3AnvZsisWAAk=
+            =G3Gh
+            -----END PGP MESSAGE-----
+          fp: A54D8FB506C103352E67737587CB975CFF2E7D8F
+    unencrypted_suffix: _unencrypted
+    version: 3.7.1
