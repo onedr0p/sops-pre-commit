@@ -1,5 +1,7 @@
 # sops-pre-commit
 
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/k8s-at-home/sops-pre-commit/main.svg)](https://results.pre-commit.ci/latest/github/k8s-at-home/sops-pre-commit/main)
+
 Sops [pre-commit](https://pre-commit.com/) hook.
 
 * Check for unencrypted Kubernetes secrets in manifest files.

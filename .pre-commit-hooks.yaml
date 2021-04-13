@@ -3,5 +3,5 @@
   name: Verify sops files
   description: Verify that sops files are encrypted.
   language: script
-  files: ((^|/)*.y[a]{0,1}ml$)
+  files: ((^|/)*.(ya?ml)$)
   entry: find-unencrypted-secrets.sh
