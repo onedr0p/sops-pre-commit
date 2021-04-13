@@ -1,45 +1,22 @@
 #!/usr/bin/env bash
+set -eux
 
-set -e
+secret_regex="^kind:\s+secret"
+sops_regex="ENC.AES256"
 
-# OSX GUI apps do not pick up environment variables the same way as Terminal apps and there are no easy solutions,
-# especially as Apple changes the GUI app behavior every release (see https://stackoverflow.com/q/135688/483528). As a
-# workaround to allow GitHub Desktop to work, add this (hopefully harmless) setting here.
-export PATH=$PATH:/usr/local/bin
 
-exit_status=1
-
-parse_arguments() {
-	while (($# > 0)); do
-		# Grab param and value splitting on " " or "=" with parameter expansion
-		local PARAMETER="${1%[ =]*}"
-		local VALUE="${1#*[ =]}"
-		if [[ "$PARAMETER" == "$VALUE" ]]; then VALUE="$2"; fi
-		shift
-		case "$PARAMETER" in
-		-*)
-			echo "Error: Unknown option: $PARAMETER" >&2
-			exit 1
-			;;
-		*)
-			files="$files $PARAMETER"
-			;;
-		esac
-	done
-}
-
-parse_arguments "$@"
-
-for FILE in $files; do
-  SECRET_REGEX='^kind:\s+secret'
-  SOPS_REGEX='ENC.AES256'
-  echo "$@"
-	if (grep -Pi "$SECRET_REGEX" "$FILE" >/dev/null); then
-		if ! (grep -P "$SOPS_REGEX" "$FILE" >/dev/null); then
-			exit_status=1
-      echo "$FILE: has unencrypted secrets! (or at least not encrypted with AES256)"
-		fi
-	fi
+has_error=0
+for file in "$@"; do
+    if (grep -q -i -P "${secret_regex}" "${file}"); then
+        if ! (grep -q -P "${sops_regex}" "${file}"); then
+            echo "ERROR: ${file} is not encrypted"
+            has_error=1
+        fi
+    fi
 done
 
-exit $exit_status
+if [[ "${has_error}" -eq 1 ]] ; then
+    echo "To ignore, use --no-verify"
+fi
+
+exit $has_error
