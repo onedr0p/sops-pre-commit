@@ -1,3 +1,4 @@
+# yamllint disable
 apiVersion: ENC[AES256_GCM,data:EB4=,iv:OmAbqRBqdMhIyBFpaAvxGmEQYaZjLijMPEo5ZYc0ySU=,tag:vDfHvfO/WIFXM+hxHPVZFA==,type:str]
 data:
     password: ENC[AES256_GCM,data:mTRYYopHASkVUB2E,iv:JacQOg+UMokmgnf8x7UM7sBT6zfqdVPXNYaBmbel094=,tag:nLDJp9DD8u8KJoP+0eV/Cw==,type:str]
