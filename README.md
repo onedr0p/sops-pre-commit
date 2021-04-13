@@ -17,7 +17,7 @@ Add the following to your `.pre-commit-config.yaml`
 
 ```yaml
 - repo: https://github.com/k8s-at-home/sops-pre-commit
-  rev: v1.0.0
+  rev: v1.1.0
   hooks:
   - id: sops-encrypted-check
 ```
