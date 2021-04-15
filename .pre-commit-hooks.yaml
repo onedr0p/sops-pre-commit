@@ -1,7 +1,6 @@
----
-- id: sops-encrypted-check
-  name: Verify sops files
-  description: Verify that sops files are encrypted.
-  language: script
+- id: forbid-secrets
+  name: Check for unencrypted Kubernetes secrets in manifest files
+  description: "Forbid files containing unencrypted Kubernetes secrets to be commited"
+  entry: forbid_secrets
+  language: python
   files: ((^|/)*.(ya?ml)$)
-  entry: find-unencrypted-secrets.sh
