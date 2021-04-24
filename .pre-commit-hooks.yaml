@@ -1,5 +1,5 @@
 - id: forbid-secrets
-  name: Check for unencrypted Kubernetes secrets in manifest files
+  name: Check for unencrypted Kubernetes secrets in manifests
   description: "Forbid files containing unencrypted Kubernetes secrets to be commited"
   entry: forbid_secrets
   language: python

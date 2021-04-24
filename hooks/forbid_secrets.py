@@ -10,9 +10,9 @@ SOPS_REGEX = r"ENC.AES256"
 def contains_secret(filename):
     with open(filename, mode="r") as file_checked:
         lines = file_checked.read()
-        kubernetes_secret = re.findall(SECRET_REGEX, lines, re.IGNORECASE)
+        kubernetes_secret = re.findall(SECRET_REGEX, lines, flags=re.IGNORECASE | re.MULTILINE)
         if kubernetes_secret:
-            sops_secret = re.findall(SOPS_REGEX, lines, re.IGNORECASE)
+            sops_secret = re.findall(SOPS_REGEX, lines, flags=re.IGNORECASE | re.MULTILINE)
             if not sops_secret:
                 return True
     return False

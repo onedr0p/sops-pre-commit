@@ -17,7 +17,7 @@ Add the following to your `.pre-commit-config.yaml`
 
 ```yaml
 - repo: https://github.com/k8s-at-home/sops-pre-commit
-  rev: v2.0.2
+  rev: v2.0.3
   hooks:
   - id: forbid-secrets
 ```
@@ -25,7 +25,3 @@ Add the following to your `.pre-commit-config.yaml`
 ## License
 
 This software is licensed under the MIT license (see the LICENSE file).
-
-## Credits
-
-[angelnu](https://github.com/angelnu/k8s-gitops/)
