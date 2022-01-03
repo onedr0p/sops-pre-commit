@@ -17,7 +17,7 @@ Add the following to your `.pre-commit-config.yaml`
 
 ```yaml
 - repo: https://github.com/k8s-at-home/sops-pre-commit
-  rev: v2.0.3
+  rev: v2.1.0
   hooks:
   - id: forbid-secrets
 ```
