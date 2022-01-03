@@ -4,7 +4,7 @@ setup(
     name='sops-pre-commit',
     description='Check for unencrypted Kubernetes secrets in manifest files',
     url='https://github.com/k8s-at-home/sops-pre-commit',
-    version='2.0.3',
+    version='2.1.0',
 
     author='Devin Buhl',
     author_email='devin.kray@gmail.com',
