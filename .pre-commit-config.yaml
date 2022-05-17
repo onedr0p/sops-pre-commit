@@ -15,8 +15,8 @@ repos:
     args:
     - -c
     - .github/yamllint.config.yaml
-- repo: git://github.com/Lucas-C/pre-commit-hooks
-  rev: v1.1.13
+- repo: https://github.com/Lucas-C/pre-commit-hooks
+  rev: v1.1.14
   hooks:
   - id: forbid-crlf
   - id: remove-crlf
