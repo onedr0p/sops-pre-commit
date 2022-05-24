@@ -4,7 +4,7 @@ import argparse
 import re
 import sys
 
-SECRET_REGEX = r"^kind:\ssecret"
+SECRET_REGEX = r"^kind:\ssecret$"
 SOPS_REGEX = r"ENC.AES256"
 KUSTOMIZE_REGEX = r"^\$patch:\sdelete"
 
