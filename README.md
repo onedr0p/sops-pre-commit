@@ -1,6 +1,6 @@
 # sops-pre-commit
 
-[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/k8s-at-home/sops-pre-commit/main.svg)](https://results.pre-commit.ci/latest/github/k8s-at-home/sops-pre-commit/main)
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/onedr0p/sops-pre-commit/main.svg)](https://results.pre-commit.ci/latest/github/onedr0p/sops-pre-commit/main)
 
 Sops [pre-commit](https://pre-commit.com/) hook.
 
@@ -16,10 +16,10 @@ Add the following to your `.pre-commit-config.yaml`
 
 
 ```yaml
-- repo: https://github.com/k8s-at-home/sops-pre-commit
+- repo: https://github.com/onedr0p/sops-pre-commit
   rev: v2.1.0
   hooks:
-  - id: forbid-secrets
+    - id: forbid-secrets
 ```
 
 ## License

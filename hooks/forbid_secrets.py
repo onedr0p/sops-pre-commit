@@ -8,7 +8,6 @@ SECRET_REGEX = r"^kind:\ssecret$"
 SOPS_REGEX = r"ENC.AES256"
 KUSTOMIZE_REGEX = r"^\$patch:\sdelete"
 
-
 def contains_secret(filename):
     with open(filename, mode="r") as file_checked:
         lines = file_checked.read()
@@ -22,7 +21,6 @@ def contains_secret(filename):
             if not ignore_secret:
                 return True
     return False
-
 
 def main(argv=None):
     parser = argparse.ArgumentParser()
